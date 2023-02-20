@@ -19,7 +19,7 @@ function Navbarmenu() {
     >
       <Container className={styles.navContainer}>
         <Navbar.Brand >
-          <a href="/">
+          <link href="/">
             <Image
               className={styles.logo}
               src="/logo.jpg"
@@ -27,7 +27,7 @@ function Navbarmenu() {
               width="50"
               alt="company-logo"
             />
-          </a>
+          </link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
