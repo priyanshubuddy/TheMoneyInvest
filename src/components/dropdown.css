@@ -1,4 +1,4 @@
-.services-submenu {
+.Contacts-submenu {
   width: 10rem;
   position: absolute;
   top: 67px;
@@ -6,16 +6,16 @@
   text-align: start;
 }
 
-.services-submenu li {
+.Contacts-submenu li {
   background: rgb(0, 212, 212);
   cursor: pointer;
 }
 
-.services-submenu li a:hover {
+.Contacts-submenu li a:hover {
   background: rgb(0, 175, 175);
 }
 
-.services-submenu.clicked {
+.Contacts-submenu.clicked {
   display: none;
 }
 

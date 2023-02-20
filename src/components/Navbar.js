@@ -1,52 +1,72 @@
-// Navbar.js
-import React, { useState } from "react";
 import Link from "next/link";
-import styles from "./Navbar.module.css";
 import Image from "next/image";
-import ContactDropdown from "./Contactdropdown";
+import { useState } from "react";
+import styles from "./Navbar.module.css";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
-const Navbar = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
 
-  const handleDropdown = () => {
-    setShowDropdown(!showDropdown);
-  };
-
+function Navbarmenu() {
   return (
-    <div className="navcontainer">
-        <div className="logo">
-        <Image src="/logo.jpg" height="50" width="50" href="/" alt="company-logo" />
-        </div>
-    <div>
-        <nav className={styles.navbar}>
-          <Link href="/">Home</Link>
-          <Link href="/News">News</Link>
-          <Link href="/Ebook">E-Book</Link>
-          <Link href="/Markets">Markets</Link>
-          <Link href="/Blog">Blog</Link>
-          <Link href="/Portfolio">Portfolio</Link>
-          <Link href="/Contact">Contact-us</Link>
-          <Link href="/Register">Register</Link>
-          <Link href="/Login">Login</Link>
-
-          {/* <div className="dropdown">
-            <button className="dropbtn" onClick={handleDropdown}>
-              Dropdown ▼
-            </button>
-            {showDropdown && (
-              <div className="dropdown-content">
-                <Link href="#">Link 1</Link>
-                <Link href="#">Link 2</Link>
-                <Link href="#">Link 3</Link>
-              </div>
-            )}
-          </div> */}
-        </nav>
-      
-    </div>
-
-    </div>
+    <Navbar
+      className={styles.NavMenu}
+      collapseOnSelect
+      expand="lg"
+      bg="dark"
+      variant="dark"
+    >
+      <Container className={styles.navContainer}>
+        <Navbar.Brand >
+          <a href="/">
+            <Image
+              className={styles.logo}
+              src="/logo.jpg"
+              height="50"
+              width="50"
+              alt="company-logo"
+            />
+          </a>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <div className={styles.navIcons}>
+            <Nav className="me-auto">
+              <Nav.Link href="/News">News</Nav.Link>
+              <Nav.Link href="/Ebook">Ebook</Nav.Link>{" "}
+              <Nav.Link href="/Markets">Markets</Nav.Link>
+              <Nav.Link href="/Blogs">Blogs</Nav.Link>{" "}
+              <Nav.Link href="/Portfolio">Portfolio</Nav.Link>
+              <Nav.Link href="/ContactUs">Contact-Us</Nav.Link>
+              {/* <Nav.Link href="#AboutUs">About-Us</Nav.Link> */}
+              <NavDropdown title="About-Us" id="collasible-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                  Another action
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">
+                  Something
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.4">
+                  Separated link
+                </NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </div>
+        </Navbar.Collapse>
+      </Container>
+      <div className={styles.ButtonContainer}>
+        <button className={styles.buttonlogin} href="/login">
+          login
+        </button>
+        <button className={styles.buttonlogin} href="/Register">
+          Register
+        </button>
+      </div>
+    </Navbar>
   );
-};
+}
 
-export default Navbar;
+export default Navbarmenu;
