@@ -1,8 +1,16 @@
 import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import { AppProps } from 'next/app'
 import 'bootstrap/dist/css/bootstrap.css'
+import React from 'react'
+import { SSRProvider } from "@react-aria/ssr";
 
-
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+function MyApp(props) {
+  const { Component, pageProps } = props;
+  return (
+    <SSRProvider>
+      <Component {...pageProps} />
+    </SSRProvider>
+  );
 }
+
+export default MyApp;

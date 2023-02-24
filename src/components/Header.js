@@ -1,23 +1,27 @@
 import React from "react";
+import Link from "next/link";
 import Navbar from "./Navbar";
-import styles from "./header.module.css";
+import Image from "next/image";
 
 
 const Header = () => {
   return (
-    <div>
-      <div className={styles.header}>
-        {/* <img
-          src={logo}
-          className="companylogo"
-          alt="logo"
-          width="100px"
-          height="100px"
-        /> */}
-        <div>
-        <h1> The Money Invest </h1>
+    <div className="HeaderContainer">
+      <Link href="/" style={{ textDecoration: "none" }}>
+        <div className="headerBox">
+          <Image
+            className="logoimage"
+            src="/images/TMI-Logo.png"
+            height="100"
+            width="100"
+            alt="company-logo"
+          />
+          <div>
+            <h1 className="headingText"> The Money Invest </h1>
+          </div>
+          
         </div>
-      </div>
+      </Link>
       <Navbar />
     </div>
   );
