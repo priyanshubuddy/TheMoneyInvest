@@ -9,26 +9,26 @@ import Link from "next/link";
 
 function Sidebar () {
   return (
-    <div>
+    <div className="SideBar">
       <Menu>
-        <Link className="menu-item" href="/">
+        <a className="menu-item" href="/">
           Home
-        </Link>
-        <Link className="menu-item" href="/News">
+        </a>
+        <a className="menu-item" href="/News">
           News
-        </Link>
-        <Link className="menu-item" href="/Ebook">
+        </a>
+        <a className="menu-item" href="/Ebook">
           Ebook
-        </Link>
-        <Link className="menu-item" href="/Markets">
+        </a>
+        <a className="menu-item" href="/Markets">
           Markets
-        </Link>
-        <Link className="menu-item" href="/Blogs">
+        </a>
+        <a className="menu-item" href="/Blogs">
           Blogs
-        </Link>
-        <Link className="menu-item" href="/Portfolio">
+        </a>
+        <a className="menu-item" href="/Portfolio">
           Portfolio
-        </Link>
+        </a>
       </Menu>
     </div>
   );
