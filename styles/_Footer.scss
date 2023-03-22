@@ -1,0 +1,28 @@
+.FooterContainer {
+    color: white;
+    background-color: black;
+    border: solid black;
+    padding: 25px;
+    font-size: 12pt;
+    text-align: center;
+    width: inherit;
+        
+}
+
+.FooterContainer p {
+    font-size: 12pt;
+    padding: 1%;
+}
+
+.FooterContainer h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.FooterContainer h3:hover {
+    color: coral;
+}
+
+.FooterContainer a {
+    text-decoration: none;
+    color: azure;
+}
