@@ -55,3 +55,24 @@ body {}
     border: 2px solid;
     box-shadow: 2px 2px 2px rgba(0, 0, 0);
 }
+
+.NewsBox1{    
+    background: linear-gradient(to bottom, #0099f7, #f11712 );
+}
+.NewsBox2{
+    background: linear-gradient(to bottom, #159957, #004c99);
+}
+.NewsBox3{
+        background: linear-gradient(to bottom, #ef94ac, #3b6bef);
+}
+.NewsBox4{
+        background: linear-gradient(to bottom, #e1eec3, #f05053);
+}
+.NewsDiv1{
+    display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        text-align: center;
+        font-weight: 600;
+        color: white;
+}

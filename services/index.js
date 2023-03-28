@@ -39,6 +39,43 @@ export const getPosts = async () => {
   return result.postsConnection.edges;
 };
 
+
+export const getNewsPosts = async () => {
+  const query = gql`
+    query GetNewsPosts {
+      newspostsConnection {
+        edges {
+          node {
+            author {
+              bio
+              id
+              name
+              photo {
+                url
+              }
+            }
+            createdAt
+            slug
+            title
+            excerpt
+            featuredImage {
+              url
+            }
+            categories {
+              name
+              slug
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const result = await request(graphqlAPI, query);
+
+  return result.newspostsConnection.edges;
+};
+
 export const getCategories = async () => {
   const query = gql`
     query GetGategories {
@@ -87,6 +124,42 @@ export const getPostDetails = async (slug) => {
 
   return result.post;
 };
+
+
+export const getNewsPostDetails = async (slug) => {
+  const query = gql`
+    query GetNewsPostDetails($slug: String!) {
+      newsposts(where: { slug: $slug }) {
+        title
+        excerpt
+        featuredImage {
+          url
+        }
+        author {
+          name
+          bio
+          photo {
+            url
+          }
+        }
+        createdAt
+        slug
+        content {
+          raw
+        }
+        categories {
+          name
+          slug
+        }
+      }
+    }
+  `;
+
+  const result = await request(graphqlAPI, query, { slug });
+
+  return result.newspost;
+};
+
 
 export const getSimilarPosts = async (categories, slug) => {
   const query = gql`
@@ -209,7 +282,7 @@ export const getFeaturedPosts = async () => {
 export const submitComment = async (obj) => {
   const result = await fetch('/api/comments', {
     method: 'POST',
-    Blogheaders: {
+    headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(obj),
@@ -253,4 +326,66 @@ export const getRecentPosts = async () => {
   const result = await request(graphqlAPI, query);
 
   return result.posts;
+};
+
+
+export const getFirstNewsPosts = async () => {
+  const query = gql`
+   query GetNewsPosts {
+  newspostsConnection(orderBy: createdAt_DESC, first: 1, skip: 0) {
+    edges {
+      node {
+         title
+    featuredImage {
+      url
+    }
+    excerpt
+    createdAt
+    slug
+      }
+    }
+  }
+}
+  `;
+  const result = await request(graphqlAPI, query);
+// console.log(result.newspostsConnection.edges);
+  return result.newspostsConnection.edges;
+};
+
+
+
+export const getSecondNewsPosts = async () => {
+  const query = gql`
+    query GetSecondNewsPosts {
+      newsposts(orderBy: publishedAt_DESC, first: 1, skip: 1) {
+        edges {
+          node {
+            author {
+              bio
+              id
+              name
+              photo {
+                url
+              }
+            }
+            createdAt
+            slug
+            title
+            excerpt
+            featuredImage {
+              url
+            }
+            categories {
+              name
+              slug
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const result = await request(graphqlAPI, query);
+
+  return result.newsposts.edges;
 };

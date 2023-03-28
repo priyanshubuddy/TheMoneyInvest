@@ -31,7 +31,7 @@ export default function PollingSection() {
             className="PositiveButton pollbuttons"
             onClick={() => handleVote("positive")}
           >
-            Positive
+            Positive{" "}
           </button>
 
           <ProgressBar

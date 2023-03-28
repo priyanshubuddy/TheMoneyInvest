@@ -19,18 +19,18 @@
 
 }
 
-h1{
-text-align: start;
+h1 {
+    text-align: start;
     font-size: 1.9rem;
 }
 
-.logoimage{
+.logoimage {
     filter: drop-shadow(0 0 0.3rem rgb(0, 0, 0));
 }
 
-    
+
 .TagLine {
-        /* text-shadow: 2px 2px 6px black; */
+    /* text-shadow: 2px 2px 6px black; */
     font-size: 80%;
     font-weight: 600;
 }
@@ -43,8 +43,8 @@ text-align: start;
     .Heading {
         font-size: 35px;
     }
-    
-    
+
+
 }
 
 #page-wrap {
@@ -56,8 +56,8 @@ h1 {
 }
 
 .DivChart {
-border: solid 3px;
-color: #000;
+    border: solid 3px;
+    color: #000;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -65,46 +65,46 @@ color: #000;
     align-content: center;
     flex-wrap: wrap;
     padding: 1% 0%;
-        border-radius: 25px;
-            box-shadow: 6px 6px 10px #000000;
-
+    border-radius: 15px;
 
 }
-#st_313a53f98860411e85d2aa9c0431845c{
-            width: 96%;
-            background-color: white;
-                border: 2px solid;
-                        border-radius: 25px;
-                            box-shadow: 2px 2px 6px #000000;
-    }
-    #StockdioWidget_WatermarkTop {
-            display: none;
-        }
-    .jchartfx_container{
-        background-color: white;
-    } 
 
-.PollContainer{
+#st_313a53f98860411e85d2aa9c0431845c {
+    width: 96%;
+    background-color: white;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #000000;
+}
+
+#StockdioWidget_WatermarkTop {
+    display: none;
+}
+
+.jchartfx_container {
+    background-color: white;
+}
+
+.PollContainer {
     border: solid;
     background-color: white;
-        padding: 0% 1%;
-        width: 50%;
-        margin-left: 10%;
-        color: rgb(0, 0, 0);
-        border-radius: 25px;
-        box-shadow: 6px 6px 10px #000000;
-        }
-        
-.MStext{
-            font-size: 13px;
-                font-weight: 700;
-                direction: rtl;
-        }
+    padding: 0% 1%;
+    width: 50%;
+    margin-left: 10%;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+.MStext {
+    font-size: 13px;
+    font-weight: 700;
+    direction: rtl;
+}
 
 
-.MainDataDiv{
-
-        background-color: #f2f3eb;
+.MainDataDiv {
+    margin: 0 10%;
+    background-color: #f2f3eb;
 
 }
 

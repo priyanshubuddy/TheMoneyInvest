@@ -4,57 +4,48 @@ import Footer from "../components/Footer";
 export default function AboutUs() {
   return (
     <div>
-
+      <title>About-us</title>
       <h1
         style={{
           height: "100%",
           color: "purple",
           borderRadius: "50px",
           border: "double black 10px",
-          marginBottom: "5%",
+          marginBottom: "3%",
+          marginTop: "1%",
+          fontSize: "2rem",
+          fontWeight: "600",
         }}
       >
-        Who Are We ?
+        About-us
       </h1>
-      <h3 style={{ margin: "5%" }}>
-        “All intelligent investing is value investing. Acquiring more that you
-        are paying for. You must value the business in order to value the
-        stock.” – Charlie Munger
-      </h3>
-      <div
-        style={{
-          display: "flex",
-          width: "",
-          margin: "10px",
-          marginBottom: "5%",
-          border: "2px solid black",
-          padding: "10px",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-evenly",
-            alignItems: "center",
-          }}
-        >
-          <h2> OUR MISSION </h2>
-          <h6 style={{ width: "50%" }}>
-            The Most Relevant information. 100% Privacy Protected! Find what you
-            are looking for Here. Get the Best Results for Market Research
-            Companies and 100% Secure. Discover us now! Easy Access To
-            Information. All the Answers. Fast and trusted. Multiple sources
-            combined.
-          </h6>
-        </div>
-        <img src="https://www.themoneyinvest.com/wp-content/uploads/2022/05/19333414-300x169.jpg" />
-      </div>
-      <h6 style={{ margin: "5%" }}>
-        Starting off as a financial portal that began by offering end-of-day
-        stock prices. India’s best store of news (text and videos), analysis,
-        data and tools on investing, personal finance, the business sector and
-        the economy.
-      </h6>
+      <h2 style={{ margin: "3%", fontWeight: "600", color: "grey" }}>
+        "Don't just do something because it's a trendy idea and will make you a
+        lot of money. The reason I say that is because any kind of venture
+        involves going through difficult times. If you're doing something you
+        are passionate about and really believe in, then that will carry you
+        through,"
+        <h1>- American businessman Jerry Greenfield.</h1>
+      </h2>
+
+      <p style={{ margin: "3%", fontWeight: "600" }}>
+        Our mission is to provide u the Most Relevant information with 100%
+        security. Giving u what you are looking for. Get the Best Results for
+        Market Research Companies. Discover us now for Easy to Access
+        Information and for your All the Answers. We are Fast and trusted. The
+        Money Invest combined Multiple sources.
+      </p>
+      <p style={{ margin: "3%", fontWeight: "600" }}>
+        Our belief is to makes it the largest online financial platform in
+        India. But while we've radically changed and evolved, the belief and
+        passion to be the best and the most insightful. That, we hope,to keep us
+        up-to-date .This we believe is merely the start of our journey.
+      </p>
+      <p style={{ margin: "3%", fontWeight: "600" }}>
+        We want to become it as India's biggest store of news (text and videos),
+        analysis, data and tools on investing (across diverse asset classes),
+        personal finance, the business sector and the economy.
+      </p>
 
       <Footer />
     </div>

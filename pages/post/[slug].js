@@ -1,6 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm, Loader, BlogHeader } from '../../components';
+
+import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm, Loader } from '../../components';
 import { getPosts, getPostDetails } from '../../services';
 import { AdjacentPosts } from '../../sections';
 
@@ -13,7 +14,6 @@ const PostDetails = ({ post }) => {
 
   return (
     <>
-    <BlogHeader />
       <div className="container mx-auto px-10 mb-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="col-span-1 lg:col-span-8">

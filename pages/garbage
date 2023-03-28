@@ -1,0 +1,37 @@
+<div style={{ width: "1250px", display: "flex" }}>
+        <div
+          style={{
+            backgroundColor: "red",
+            height: "200px",
+            width: "250px",
+            float: "left",
+          }}
+        ></div>
+        <div
+          style={{
+            backgroundColor: "blue",
+            height: "300px",
+            width: "700px",
+            marginLeft: "10px",
+          }}
+        ></div>
+        <div>
+
+        <div
+          style={{
+            backgroundColor: "green",
+            height: "200px",
+            width: "250px",
+            clear: "both",
+          }}
+        ></div>
+        <div
+          style={{
+            backgroundColor: "purple",
+            height: "150px",
+            width: "250px",
+            marginTop: "10px",
+          }}
+        ></div>
+        </div>
+      </div>

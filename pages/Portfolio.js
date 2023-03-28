@@ -48,7 +48,8 @@ const Portfolio = () => {
                 margin: "2% 10%",
                 color: "white",
                 fontSize: "large",
-                }}>
+              }}
+            >
               Work with all the necessary information to boost money flow from
               your capital investment using Themoneyinvest.com
             </p>
@@ -57,7 +58,7 @@ const Portfolio = () => {
         </div>{" "}
       </div>
 
-      <div class="container">
+      <div style={{ display: "flex", justifyContent: "space-evenly" }}>
         <div class="viewport">
           <div class="box glow">
             <img
@@ -66,7 +67,7 @@ const Portfolio = () => {
               width="100"
               height="100"
             ></img>
-            <p>Title of image 1</p>
+            <p className="BoxTitle">Title of image 1</p>
           </div>
           <div class="box glow">
             <img
@@ -75,8 +76,10 @@ const Portfolio = () => {
               width="100"
               height="100"
             ></img>
-            <p>Title of image 2</p>
+            <p className="BoxTitle">Title of image 2</p>
           </div>
+        </div>
+        <div class="viewport">
           <div class="box glow">
             <img
               src="/images/image3.png"
@@ -84,7 +87,7 @@ const Portfolio = () => {
               width="100"
               height="100"
             ></img>
-            <p>Title of image 3</p>
+            <p className="BoxTitle">Title of image 3</p>
           </div>
           <div class="box glow">
             <img
@@ -93,9 +96,10 @@ const Portfolio = () => {
               width="100"
               height="100"
             ></img>
-            <p>Title of image 4</p>
+            <p className="BoxTitle">Title of image 4</p>
           </div>
-          <div class="box glow">
+        </div>
+        {/* <div class="box glow">
             <img
               src="/images/image5.png"
               alt="Image 5"
@@ -150,8 +154,7 @@ const Portfolio = () => {
               height="100"
             ></img>
             <p>Title of image 10</p>
-          </div>
-        </div>
+          </div> */}
       </div>
 
       <Footer />

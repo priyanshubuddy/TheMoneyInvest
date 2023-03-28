@@ -1,14 +1,13 @@
 .PollSection {
-    display: flex;
-    flex-direction: column;
-        width: 100%;
-        /* justify-content: center; */
+    display:flex;
+    /* flex-direction: column; */
+        /* width: 100%; */
         align-items: center;
         border: solid 2px rgb(0, 0, 0);
         text-align: center;
         border: solid;
-        padding: 2% 10%;
-        border-radius: 42px;
+        padding: 1% 2%;
+        border-radius: 10px;
 }
 
 .VoteDiv {
@@ -35,7 +34,7 @@
         width: 100%;
         box-sizing: border-box;
         padding: 2% 10%;
-        border-radius: 42px;
+        border-radius: 15px;
 
 
         .VoteCount {
@@ -56,7 +55,7 @@
     border-radius: 10px;
     margin: 20px;
     border: solid 1px rgb(174, 169, 169);
-    width: 70vh;
+    width: 47vh;
 }
 
 .progress-bar{
