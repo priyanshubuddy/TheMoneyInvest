@@ -25,7 +25,7 @@ export default function AboutUs() {
         involves going through difficult times. If you're doing something you
         are passionate about and really believe in, then that will carry you
         through,"
-        <h1>- American businessman Jerry Greenfield.</h1>
+        <p>- American businessman Jerry Greenfield.</p>
       </h2>
 
       <p style={{ margin: "3%", fontWeight: "600" }}>

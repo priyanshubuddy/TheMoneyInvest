@@ -31,7 +31,9 @@ export default function NewsApp({ newsposts }) {
             float: "left",
             backgroundSize: "cover",
           }}
-        ></div>
+        >
+
+        </div>
         <div
           className="NewsBox2"
           style={{

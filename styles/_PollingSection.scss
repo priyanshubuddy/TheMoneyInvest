@@ -1,5 +1,5 @@
 .PollSection {
-    display:flex;
+    /* display:flex; */
     /* flex-direction: column; */
         /* width: 100%; */
         align-items: center;
@@ -9,6 +9,15 @@
         padding: 1% 2%;
         border-radius: 10px;
 }
+@media (max-width: 768px) {
+    .PollSection {
+    width: 100%;
+        display: flex;
+            flex-direction: column;
+    }
+}
+
+
 
 .VoteDiv {
     display: flex;
@@ -51,8 +60,8 @@
 /* Style the progress element */
 .progress {
     width: 100%;
-    height: 25px;
-    border-radius: 10px;
+    /* height: 25px; */
+    border-radius: 15px;
     margin: 20px;
     border: solid 1px rgb(174, 169, 169);
     width: 47vh;
@@ -60,8 +69,7 @@
 
 .progress-bar{
     white-space: nowrap;
-    border-radius: 10px;
-    margin-left: 2px;
+    border-radius: 1rem;
     height: 25px;
 }
 
@@ -70,7 +78,7 @@
 }
 
 .NegativeBar .progress-bar {
-    background-color: rgb(198, 60, 60);
+    background-color: rgb(200, 59, 59);
 }
 
 .PositiveButton {
@@ -101,7 +109,7 @@ button:active {
 
 .PositiveButton,
 .NegativeButton {
-    font-family: system-ui, sans-serif;
+    /* font-family: system-ui, sans-serif; */
     font-size: 1.2rem;
     cursor: pointer;
     padding: .1em .6em;

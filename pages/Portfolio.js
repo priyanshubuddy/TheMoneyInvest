@@ -58,7 +58,7 @@ const Portfolio = () => {
         </div>{" "}
       </div>
 
-      <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+      <div className="lg:flex justify-around ">
         <div class="viewport">
           <div class="box glow">
             <img

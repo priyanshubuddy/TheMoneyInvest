@@ -29,36 +29,126 @@ const Ebook = () => {
         */}
 
       <div className="EbookSection">
-        <div className="Books">
-          <div className="BookContainer photo ">
-            <Image
-              className="BookImage"
-              src="/images/TheDisciplinedtrader.jpg"
-              width="150"
-              height="200"
-            />
-            <h1 className="EbookTitle">The Disciplined trader</h1>
-            <button className="btn btn-success Downloadbtn">Download </button>
+        <div className="lg:flex">
+          <div>
+            <div className="BookContainer photo">
+              <div className="">
+                <Image
+                  className="BookImage"
+                  src="/images/TheDisciplinedtrader.jpg"
+                  width="150"
+                  height="200"
+                />
+                <h1 className="EbookTitle">The Disciplined trader</h1>
+                <button className="btn btn-success">Download </button>
+              </div>
+            </div>
+            <div className="BookContainer photo">
+              <div className="">
+                <Image
+                  className="BookImage"
+                  src="/images/TheIntelligentInvestor.jpg"
+                  width="150"
+                  height="200"
+                />
+              </div>
+              <h1 className="EbookTitle">The Intelligent Investor</h1>
+              <button className="btn btn-success Downloadbtn">Download</button>
+            </div>
+            <div className="BookContainer photo">
+              <div className="">
+                <Image
+                  className="BookImage"
+                  src="/images/TradingInTheZone.jpg"
+                  width="150"
+                  height="200"
+                />
+                <h1 className="EbookTitle">Trading In The Zone</h1>
+                <button className="btn btn-success Downloadbtn">
+                  Download
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="BookContainer photo">
-            <Image
-              className="BookImage"
-              src="/images/TheIntelligentInvestor.jpg"
-              width="150"
-              height="200"
-            />
-            <h1 className="EbookTitle">The Intelligent Investor</h1>
-            <button className="btn btn-success Downloadbtn">Download</button>
+          <div>
+            <div className="BookContainer photo">
+              <div className="">
+                <Image
+                  className="BookImage"
+                  src="/images/TheDisciplinedtrader.jpg"
+                  width="150"
+                  height="200"
+                />
+                <h1 className="EbookTitle">The Disciplined trader</h1>
+                <button className="btn btn-success">Download </button>
+              </div>
+            </div>
+            <div className="BookContainer photo">
+              <div className="">
+                <Image
+                  className="BookImage"
+                  src="/images/TheIntelligentInvestor.jpg"
+                  width="150"
+                  height="200"
+                />
+              </div>
+              <h1 className="EbookTitle">The Intelligent Investor</h1>
+              <button className="btn btn-success Downloadbtn">Download</button>
+            </div>
+            <div className="BookContainer photo">
+              <div className="">
+                <Image
+                  className="BookImage"
+                  src="/images/TradingInTheZone.jpg"
+                  width="150"
+                  height="200"
+                />
+                <h1 className="EbookTitle">Trading In The Zone</h1>
+                <button className="btn btn-success Downloadbtn">
+                  Download
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="BookContainer photo">
-            <Image
-              className="BookImage"
-              src="/images/TradingInTheZone.jpg"
-              width="150"
-              height="200"
-            />
-            <h1 className="EbookTitle">Trading In The Zone</h1>
-            <button className="btn btn-success Downloadbtn">Download</button>
+          <div>
+            <div className="BookContainer photo">
+              <div className="">
+                <Image
+                  className="BookImage"
+                  src="/images/TheDisciplinedtrader.jpg"
+                  width="150"
+                  height="200"
+                />
+                <h1 className="EbookTitle">The Disciplined trader</h1>
+                <button className="btn btn-success">Download </button>
+              </div>
+            </div>
+            <div className="BookContainer photo">
+              <div className="">
+                <Image
+                  className="BookImage"
+                  src="/images/TheIntelligentInvestor.jpg"
+                  width="150"
+                  height="200"
+                />
+              </div>
+              <h1 className="EbookTitle">The Intelligent Investor</h1>
+              <button className="btn btn-success Downloadbtn">Download</button>
+            </div>
+            <div className="BookContainer photo">
+              <div className="">
+                <Image
+                  className="BookImage"
+                  src="/images/TradingInTheZone.jpg"
+                  width="150"
+                  height="200"
+                />
+                <h1 className="EbookTitle">Trading In The Zone</h1>
+                <button className="btn btn-success Downloadbtn">
+                  Download
+                </button>
+              </div>
+            </div>
           </div>
         </div>
         <img

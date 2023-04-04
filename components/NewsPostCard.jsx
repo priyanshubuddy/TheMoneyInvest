@@ -35,7 +35,7 @@ const NewsPostCard = ({ post }) => (
         </h1>
       </div> */}
     <div>
-      <div className="flex my-3 h-20 shadow-lg" style={{}}>
+      <div className="flex my-3 h-20 bg-white" style={{}}>
         <img
           src={post.featuredImage.url}
           alt=""
