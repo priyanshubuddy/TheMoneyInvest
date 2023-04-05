@@ -143,7 +143,7 @@ function Footer() {
             <div className="row">
               <div className="col-12">
                 <p>
-                  U+00a9 All Rights Reserved by{' '}
+                  All Rights Reserved by{' '}
                   <a href="#">
                     The Money Invest<i className="fa fa-love" />
                   </a>

@@ -1,5 +1,7 @@
 {
   "name": "myapp",
+ "homepage": "http://themoneyinvest.com",
+ "description": "my react application",
   "version": "0.1.0",
   "private": "true",
   "scripts": {
