@@ -1,6 +1,7 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/prefer-stateless-function */
 /* eslint-disable react/jsx-no-target-blank */
-/* eslint-disable @next/next/no-img-element */
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 export class NewsItem extends Component {
   render() {

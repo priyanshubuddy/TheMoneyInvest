@@ -1,13 +1,12 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
-import React from "react";
-import { slide as Menu } from "react-burger-menu";
-import Link from "next/link";
+/* eslint-disable no-unused-vars */
+
+import React from 'react';
+import { slide as Menu } from 'react-burger-menu';
+import Link from 'next/link';
 // import { bubble as Menu } from "react-burger-menu";
 // import { elastic as Menu } from "react-burger-menu";
 
-
-
-function Sidebar () {
+function Sidebar() {
   return (
     <div className="SideBar">
       <Menu>
@@ -41,6 +40,6 @@ function Sidebar () {
       </Menu>
     </div>
   );
-};
+}
 
 export default Sidebar;

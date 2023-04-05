@@ -1,10 +1,11 @@
+/* eslint-disable react/jsx-no-useless-fragment */
 import React, { useEffect, useState } from 'react';
 import moment from 'moment';
 import parse from 'html-react-parser';
 
 import { getComments } from '../services';
 
-const Comments = ({ slug }) => {
+function Comments({ slug }) {
   const [comments, setComments] = useState([]);
 
   useEffect(() => {
@@ -38,6 +39,6 @@ const Comments = ({ slug }) => {
       )}
     </>
   );
-};
+}
 
 export default Comments;

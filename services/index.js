@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import { request, gql } from 'graphql-request';
 
 const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
@@ -38,7 +39,6 @@ export const getPosts = async () => {
 
   return result.postsConnection.edges;
 };
-
 
 export const getNewsPosts = async () => {
   const query = gql`
@@ -125,7 +125,6 @@ export const getPostDetails = async (slug) => {
   return result.post;
 };
 
-
 export const getNewsPostDetails = async (slug) => {
   const query = gql`
     query GetNewsPostDetails($slug: String!) {
@@ -159,7 +158,6 @@ export const getNewsPostDetails = async (slug) => {
 
   return result.newspost;
 };
-
 
 export const getSimilarPosts = async (categories, slug) => {
   const query = gql`
@@ -328,7 +326,6 @@ export const getRecentPosts = async () => {
   return result.posts;
 };
 
-
 export const getFirstNewsPosts = async () => {
   const query = gql`
    query GetNewsPosts {
@@ -348,11 +345,9 @@ export const getFirstNewsPosts = async () => {
 }
   `;
   const result = await request(graphqlAPI, query);
-// console.log(result.newspostsConnection.edges);
+  // console.log(result.newspostsConnection.edges);
   return result.newspostsConnection.edges;
 };
-
-
 
 export const getSecondNewsPosts = async () => {
   const query = gql`

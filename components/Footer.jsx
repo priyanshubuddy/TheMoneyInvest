@@ -1,14 +1,17 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable no-unused-vars */
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   solid,
   regular,
   brands,
   icon,
-} from "@fortawesome/fontawesome-svg-core/import.macro";
-import { faFacebookF } from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/fontawesome-svg-core/import.macro';
+import { faFacebookF } from '@fortawesome/free-solid-svg-icons';
 
-const Footer = () => {
+function Footer() {
   return (
     <div className="FooterContainer">
       <footer className="kilimanjaro_area">
@@ -35,39 +38,39 @@ const Footer = () => {
                   <ul className="kilimanjaro_social_links">
                     <li>
                       <a href="#">
-                        <i className="fa fa-facebook" aria-hidden="true"></i>{" "}
+                        <i className="fa fa-facebook" aria-hidden="true" />{' '}
                         Facebook
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i className="fa fa-twitter" aria-hidden="true"></i>{" "}
+                        <i className="fa fa-twitter" aria-hidden="true" />{' '}
                         Twitter
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i className="fa fa-pinterest" aria-hidden="true"></i>{" "}
+                        <i className="fa fa-pinterest" aria-hidden="true" />{' '}
                         LinkedIn
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i className="fa fa-youtube" aria-hidden="true"></i>{" "}
+                        <i className="fa fa-youtube" aria-hidden="true" />{' '}
                         YouTube
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i className="fa fa-linkedin" aria-hidden="true"></i>{" "}
+                        <i className="fa fa-linkedin" aria-hidden="true" />{' '}
                         Instagram
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-                <div className="row">
-              <div className="col-12 col-md-6 col-lg-3">
+              <div className="row">
+                <div className="col-12 col-md-6 col-lg-3">
 
                   <div className="kilimanjaro_part m-top-15">
                     <h5>Important Links</h5>
@@ -77,7 +80,7 @@ const Footer = () => {
                           <i
                             className="fa fa-angle-right"
                             aria-hidden="true"
-                          ></i>
+                          />
                           Terms & Conditions
                         </a>
                       </li>
@@ -86,7 +89,7 @@ const Footer = () => {
                           <i
                             className="fa fa-angle-right"
                             aria-hidden="true"
-                          ></i>
+                          />
                           About Licences
                         </a>
                       </li>
@@ -95,7 +98,7 @@ const Footer = () => {
                           <i
                             className="fa fa-angle-right"
                             aria-hidden="true"
-                          ></i>
+                          />
                           Help & Support
                         </a>
                       </li>
@@ -105,7 +108,7 @@ const Footer = () => {
                           <i
                             className="fa fa-angle-right"
                             aria-hidden="true"
-                          ></i>
+                          />
                           Privacy Policy
                         </a>
                       </li>
@@ -140,9 +143,9 @@ const Footer = () => {
             <div className="row">
               <div className="col-12">
                 <p>
-                  © All Rights Reserved by{" "}
+                  © All Rights Reserved by{' '}
                   <a href="#">
-                    The Money Invest<i className="fa fa-love"></i>
+                    The Money Invest<i className="fa fa-love" />
                   </a>
                 </p>
               </div>
@@ -152,6 +155,6 @@ const Footer = () => {
       </footer>
     </div>
   );
-};
+}
 
 export default Footer;

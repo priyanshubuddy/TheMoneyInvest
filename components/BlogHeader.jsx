@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { getCategories } from '../services';
 
-const BlogHeader = () => {
+function BlogHeader() {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -28,6 +28,6 @@ const BlogHeader = () => {
       </div>
     </div>
   );
-};
+}
 
 export default BlogHeader;

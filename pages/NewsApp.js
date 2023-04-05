@@ -1,13 +1,14 @@
-import React from "react";
-import { FeaturedPosts } from "../sections/index";
-import { PostCard, Categories, PostWidget, BlogHeader } from "../components";
-import { getNewsPosts } from "../services";
-import { grpahCMSImageLoader } from "../util";
-import NewsPostCard from "../components/NewsPostCard";
-import { getFirstNewsPosts } from "../services";
-import FirstNewsPost from "../components/FirstNewsPost";
-import { getSecondNewsPosts } from "../services";
-import LatestPost from "../components/LatestPost";
+/* eslint-disable no-unused-vars */
+import React from 'react';
+import { FeaturedPosts } from '../sections/index';
+import { PostCard, Categories, PostWidget, BlogHeader } from '../components';
+import { getNewsPosts } from '../services';
+import { grpahCMSImageLoader } from '../util';
+import NewsPostCard from '../components/NewsPostCard';
+
+import FirstNewsPost from '../components/FirstNewsPost';
+
+import LatestPost from '../components/LatestPost';
 
 // const NewsApp = ( ) => {
 //   return (
@@ -20,59 +21,57 @@ import LatestPost from "../components/LatestPost";
 export default function NewsApp({ newsposts }) {
   return (
     <div
-      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+      style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
     >
-      <div style={{ width: "1250px", display: "flex", alignItems: "center" }}>
+      <div style={{ width: '1250px', display: 'flex', alignItems: 'center' }}>
         <div
           className="NewsBox1"
           style={{
-            height: "400px",
-            width: "313px",
-            float: "left",
-            backgroundSize: "cover",
+            height: '400px',
+            width: '313px',
+            float: 'left',
+            backgroundSize: 'cover',
           }}
-        >
-
-        </div>
+        />
         <div
           className="NewsBox2"
           style={{
-            height: "400px",
-            width: "624px",
-            margin: "10px",
+            height: '400px',
+            width: '624px',
+            margin: '10px',
           }}
-        ></div>
+        />
         <div>
           <div
             className="NewsBox3"
             style={{
-              height: "195px",
-              width: "313px",
-              clear: "both",
+              height: '195px',
+              width: '313px',
+              clear: 'both',
             }}
-          ></div>
+          />
           <div
             className="NewsBox4"
             style={{
-              height: "195px",
-              width: "313px",
-              marginTop: "10px",
+              height: '195px',
+              width: '313px',
+              marginTop: '10px',
             }}
-          ></div>
+          />
         </div>
       </div>
 
       {/* <NewsPostCard /> */}
-      <div style={{ width: "1250px", display: "flex", alignItems: "center" }}>
-        <div className="" style={{ display: "flex" }}>
-          <div className="mr-4" style={{ width: "25%" }}>
+      <div style={{ width: '1250px', display: 'flex', alignItems: 'center' }}>
+        <div className="" style={{ display: 'flex' }}>
+          <div className="mr-4" style={{ width: '25%' }}>
             <h1 className="border-black border-b-2 mb-2  ">Recent News</h1>
             {newsposts.map((post, index) => (
               <NewsPostCard key={index} post={post.node} />
             ))}
           </div>
 
-          <div className="mr-4" style={{ width: "50%" }}>
+          <div className="mr-4" style={{ width: '50%' }}>
             <h1 className="border-black border-b-2 mb-2">Popular News</h1>
             {/* {newsposts.map((post, index) => ( */}
             {/* ))} */}
@@ -80,12 +79,12 @@ export default function NewsApp({ newsposts }) {
               <div className="col-span-8 ">
                 second
                 {/* <LatestPost /> */}
-            <FirstNewsPost />
+                <FirstNewsPost />
               </div>
               <div className="col-span-4 bg-red-600">first</div>
             </div>
           </div>
-          <div className="" style={{ width: "25%" }}>
+          <div className="" style={{ width: '25%' }}>
             <h1 className="border-black border-b-2 mb-2">Trending News</h1>
             {newsposts.map((post, index) => (
               <NewsPostCard key={index} post={post.node} />

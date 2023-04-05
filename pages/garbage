@@ -1,4 +1,4 @@
-<div style={{ width: "1250px", display: "flex" }}>
+<!-- <div style={{ width: "1250px", display: "flex" }}>
         <div
           style={{
             backgroundColor: "red",
@@ -114,4 +114,4 @@
       );
       }
       
-      export default QuizPage;
+      export default QuizPage; -->

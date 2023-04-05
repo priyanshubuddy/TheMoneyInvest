@@ -1,25 +1,25 @@
-import React from 'react'
+import React from 'react';
 
-const PrivacyPolicy = () => {
+function PrivacyPolicy() {
   return (
     <div className="">
-    <title>Privacy Policy</title>
+      <title>Privacy Policy</title>
       <h1
         style={{
-          height: "100%",
-          color: "purple",
-          borderRadius: "50px",
-          border: "double black 10px",
-          marginBottom: "3%",
-          marginTop: "1%",
-          fontSize: "2rem",
-          fontWeight: "600",
+          height: '100%',
+          color: 'purple',
+          borderRadius: '50px',
+          border: 'double black 10px',
+          marginBottom: '3%',
+          marginTop: '1%',
+          fontSize: '2rem',
+          fontWeight: '600',
         }}
       >
         Privacy Policy
       </h1>
       <h1 className="mb-8 text-4xl">Privacy Policy for India</h1>
-      <div style={{ margin: "3%" }}>
+      <div style={{ margin: '3%' }}>
         <p>
           This Privacy Policy (“Policy”) describes the information which The
           Money Invest (“We”, “Us”, “Our” “Services”, “Company”) collects from
@@ -47,7 +47,7 @@ const PrivacyPolicy = () => {
         </p>
       </div>
       <h1 className="mb-8 text-4xl">Cookies</h1>
-      <div style={{ margin: "3%" }}>
+      <div style={{ margin: '3%' }}>
         <p>
           To improve the responsiveness of the Sites for our Users, we may use
           “cookies”, or similar electronic tools to collect Information to
@@ -75,7 +75,7 @@ const PrivacyPolicy = () => {
       <h1 className="mb-8 text-4xl">
         Information obtained from Third party Sites
       </h1>
-      <div style={{ margin: "3%" }}>
+      <div style={{ margin: '3%' }}>
         <p>
           If you link, connect or login to your TIL Services account with a
           third party services they may send Us information such as your
@@ -95,32 +95,32 @@ const PrivacyPolicy = () => {
         </ul>
       </div>
       <h1 className="mb-8 text-4xl">Collection of Information</h1>
-      <div style={{ margin: "3%" }}>
+      <div style={{ margin: '3%' }}>
         <ul>
           <li> • To provide you and administer Our services</li>
           <li>
-            {" "}
+            {' '}
             • Enabling registration/Sign Up and maintaining your accounts on TIL
             Service
           </li>
           <li>
-            {" "}
+            {' '}
             • Notify you about changes in terms of service or privacy policy
           </li>
           <li>
-            {" "}
+            {' '}
             • Allow you to participate in interactive features offered through
             Our Services
           </li>
           <li>
-            {" "}
+            {' '}
             • Sharing with Our customer support team to resolve your
             queries/concerns related to your rights or services provided to you.
           </li>
         </ul>
       </div>
       <h1 className="mb-8 text-4xl">Processing orders or applications;</h1>
-      <div style={{ margin: "3%" }}>
+      <div style={{ margin: '3%' }}>
         <ul>
           <li>
             a. Provisioning of services, testing or improvement of services,
@@ -145,4 +145,4 @@ const PrivacyPolicy = () => {
   );
 }
 
-export default PrivacyPolicy
+export default PrivacyPolicy;

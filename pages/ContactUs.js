@@ -1,13 +1,13 @@
-import { useState } from "react";
-import React  from "react";
-import Footer from "../components/Footer";
+import React, { useState } from 'react';
+
+import Footer from '../components/Footer';
 
 function ContactUs() {
-  const [customerName, setCustomerName] = useState("");
-  const [customerEmail, setCustomerEmail] = useState("");
-  const [customerPhone, setCustomerPhone] = useState("");
-  const [Subject, setSubject] = useState("");
-  const [customerNote, setCustomerNote] = useState("");
+  const [customerName, setCustomerName] = useState('');
+  const [customerEmail, setCustomerEmail] = useState('');
+  const [customerPhone, setCustomerPhone] = useState('');
+  const [Subject, setSubject] = useState('');
+  const [customerNote, setCustomerNote] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();

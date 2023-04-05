@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { submitComment } from '../services';
 
-const CommentsForm = ({ slug }) => {
+function CommentsForm({ slug }) {
   const [error, setError] = useState(false);
   const [localStorage, setLocalStorage] = useState(null);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [formData, setFormData] = useState({ name: null, email: null, comment: null, storeData: false });
 
   useEffect(() => {
-    
     setLocalStorage(window.localStorage);
     const initalFormData = {
       name: window.localStorage.getItem('name'),
@@ -98,6 +97,6 @@ const CommentsForm = ({ slug }) => {
       </div>
     </div>
   );
-};
+}
 
 export default CommentsForm;

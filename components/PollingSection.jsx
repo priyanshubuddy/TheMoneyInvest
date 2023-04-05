@@ -1,6 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
-import React, { useState } from "react";
-import { ProgressBar } from "react-bootstrap";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react/button-has-type */
+
+import React, { useState } from 'react';
+import { ProgressBar } from 'react-bootstrap';
 
 export default function PollingSection() {
   const [positiveVotes, setPositiveVotes] = useState(0);
@@ -14,7 +16,7 @@ export default function PollingSection() {
     : 0;
 
   const handleVote = (option) => {
-    if (option === "positive") {
+    if (option === 'positive') {
       setPositiveVotes(positiveVotes + 1);
     } else {
       setNegativeVotes(negativeVotes + 1);
@@ -28,14 +30,14 @@ export default function PollingSection() {
         <div className=" flex VoteDiv container">
           {/* <h6 className="buttonText">Positive</h6> */}
           <div className="flex">
-          <button
-            className="w-10 h-10 rounded-full PositiveButton pollbuttons"
-            onClick={() => handleVote("positive")}
-          >
-          <a>
-            Positive{" "}
-          </a>
-          </button>
+            <button
+              className="w-10 h-10 rounded-full PositiveButton pollbuttons"
+              onClick={() => handleVote('positive')}
+            >
+              <a>
+                Positive{' '}
+              </a>
+            </button>
           </div>
           {/* <button
             className="w-10 h-10 rounded-full PositiveButton pollbuttons"
@@ -53,7 +55,7 @@ export default function PollingSection() {
           {/* <h6 className="buttonText">Negative</h6> */}
           <button
             className="w-10 h-10 rounded-full NegativeButton pollbuttons"
-            onClick={() => handleVote("negative")}
+            onClick={() => handleVote('negative')}
           >
             Negative
           </button>

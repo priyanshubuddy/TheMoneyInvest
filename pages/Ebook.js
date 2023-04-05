@@ -1,16 +1,16 @@
-/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/button-has-type */
 /* eslint-disable jsx-a11y/alt-text */
-import React from "react";
-import Image from "next/image";
-import Footer from "../components/Footer";
+import React from 'react';
+import Image from 'next/image';
+import Footer from '../components/Footer';
 
-const Ebook = () => {
+function Ebook() {
   return (
     <div className="EbookContainer">
       <title>Ebook</title>
       <div
         className="EbookHead"
-        style={{ position: "relative", height: "200px" }}
+        style={{ position: 'relative', height: '200px' }}
       >
         <Image
           className="HeadImage"
@@ -24,7 +24,7 @@ const Ebook = () => {
       <h1 className="HeadText">E-Books</h1>
       {/* <div
         className="EbookSection"
-        style={{ backgroundImage: 'url(/images/background.jpg)', opacity: 0.2}} 
+        style={{ backgroundImage: 'url(/images/background.jpg)', opacity: 0.2}}
       >
         */}
 
@@ -156,12 +156,12 @@ const Ebook = () => {
           src="/images/background.jpg"
           alt="Background"
           style={{
-            position: "absolute",
+            position: 'absolute',
             top: 0,
             left: 0,
             zIndex: -1,
             opacity: 0.3,
-            margin: "10px",
+            margin: '10px',
           }}
         />
       </div>
@@ -169,6 +169,6 @@ const Ebook = () => {
       <Footer />
     </div>
   );
-};
+}
 
 export default Ebook;

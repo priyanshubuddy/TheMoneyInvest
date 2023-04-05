@@ -1,7 +1,14 @@
-import React, { Component } from "react";
-import Loading from "./Loader";
-import NewsItem from "./NewsItems";
-import PropTypes from "prop-types";
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/no-access-state-in-setstate */
+/* eslint-disable import/no-named-as-default */
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable react/button-has-type */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/sort-comp */
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import Loading from './Loader';
+import NewsItem from './NewsItems';
 
 export class NewsApp extends Component {
   constructor(props) {
@@ -15,10 +22,11 @@ export class NewsApp extends Component {
     this.handleNext = this.handleNext.bind(this);
     this.handlePrevious = this.handlePrevious.bind(this);
   }
+
   // function to handle next and previous.
   async handleNext() {
-    window.scrollTo(0, 0); //scrolls to top on rendering.
-    let url = `https://newsapi.org/v2/top-headlines?country=${
+    window.scrollTo(0, 0); // scrolls to top on rendering.
+    const url = `https://newsapi.org/v2/top-headlines?country=${
       this.props.country
     }&category=${
       this.props.category
@@ -26,17 +34,18 @@ export class NewsApp extends Component {
       this.state.pg + 1
     }&pageSize=${this.props.pageSize}`;
     this.setState({ loading: true });
-    let data = await fetch(url);
-    let parsedData = await data.json();
+    const data = await fetch(url);
+    const parsedData = await data.json();
     this.setState({
       pg: this.state.pg + 1,
       articles: parsedData.articles,
       loading: false,
     });
   }
+
   async handlePrevious() {
     window.scrollTo(0, 0);
-    let url = `https://newsapi.org/v2/top-headlines?country=${
+    const url = `https://newsapi.org/v2/top-headlines?country=${
       this.props.country
     }&category=${
       this.props.category
@@ -44,8 +53,8 @@ export class NewsApp extends Component {
       this.state.pg - 1
     }&pageSize=${this.props.pageSize}`;
     this.setState({ loading: true });
-    let data = await fetch(url);
-    let parsedData = await data.json();
+    const data = await fetch(url);
+    const parsedData = await data.json();
 
     this.setState({
       pg: this.state.pg - 1,
@@ -54,7 +63,7 @@ export class NewsApp extends Component {
     });
   }
 
-  //render
+  // render
   render() {
     return (
       <>
@@ -70,29 +79,27 @@ export class NewsApp extends Component {
           {this.state.loading && <Loading />}
           <div className="row">
             {/* news items mapping */}
-            {!this.state.loading &&
-              this.state.articles.map((items, id) => {
-                return (
-                  <div className="col-md-4 col-sm-6 col-xs-12" key={items.url}>
-                    <NewsItem
-                      title={
-                        (items.title ? items.title.slice(0, 45) : "") + ".."
+            {!this.state.loading
+              && this.state.articles.map((items, id) => (
+                <div className="col-md-4 col-sm-6 col-xs-12" key={items.url}>
+                  <NewsItem
+                    title={
+                        `${items.title ? items.title.slice(0, 45) : ''}..`
                       }
-                      description={
-                        (items.description
+                    description={
+                        `${items.description
                           ? items.description.slice(0, 85)
-                          : "") + "..."
+                          : ''}...`
                       }
                       // imageURL={
                       //   items.urlToImage
                       //     ? items.urlToImage
                       //     : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/120px-No_image_available.svg.png"
                       // }
-                      newsURL={items.url}
-                    />
-                  </div>
-                );
-              })}
+                    newsURL={items.url}
+                  />
+                </div>
+              ))}
           </div>
         </div>
         {/* previous pgno. and next buttons */}
@@ -119,13 +126,13 @@ export class NewsApp extends Component {
     );
   }
 
-  //didMount
+  // didMount
   async componentDidMount() {
     window.scrollTo(0, 0);
     const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=f59178ab70df48bc83797911eebc20d9&page=1&pageSize=${this.props.pageSize}`;
     this.setState({ loading: true });
-    let data = await fetch(url);
-    let parsedData = await data.json();
+    const data = await fetch(url);
+    const parsedData = await data.json();
 
     this.setState({
       articles: parsedData.articles,
@@ -135,16 +142,16 @@ export class NewsApp extends Component {
   }
 }
 
-//Proptypes.
+// Proptypes.
 NewsApp.propTypes = {
   country: PropTypes.string,
   pageSize: PropTypes.number,
   category: PropTypes.string,
 };
 NewsApp.defaultProps = {
-  country: "in",
+  country: 'in',
   pageSize: 9,
-  category: "Business",
+  category: 'Business',
 };
 
 export default NewsApp;

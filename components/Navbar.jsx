@@ -1,9 +1,10 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
-import React from "react";
-import Navbar from "react-bootstrap/Navbar";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faBell } from "@fortawesome/free-solid-svg-icons";
-import Sidebar from "./Sidebar";
+/* eslint-disable no-unused-vars */
+
+import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch, faBell } from '@fortawesome/free-solid-svg-icons';
+import Sidebar from './Sidebar';
 
 function Navbarmenu() {
   return (
@@ -27,11 +28,11 @@ function Navbarmenu() {
         <a className="NavItems" href="/Portfolio">
           Portfolio
         </a>
-        <div class="dropdown">
-          <a class="NavItems Ext" href="/AboutUs">
+        <div className="dropdown">
+          <a className="NavItems Ext" href="/AboutUs">
             About-Us
           </a>
-          <div class="dropdown-content">
+          <div className="dropdown-content">
             <a href="/PrivacyPolicy">Privacy Policy</a>
             <a href="/TermAndConditions">Term & Conditions</a>
             <a href="/Disclaimer">Disclaimer</a>
@@ -42,7 +43,7 @@ function Navbarmenu() {
         </a>
       </div>
       <div className="IconPack mr-5">
-        <div class="container-2">
+        <div className="container-2">
           <FontAwesomeIcon className="Icons icon" icon={faSearch} />
           <input type="search" id="search" placeholder="Search..." />
         </div>

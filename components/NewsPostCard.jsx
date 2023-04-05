@@ -1,13 +1,15 @@
-import React from "react";
-import Image from "next/image";
-import moment from "moment";
-import Link from "next/link";
+/* eslint-disable no-unused-vars */
+import React from 'react';
+import Image from 'next/image';
+import moment from 'moment';
+import Link from 'next/link';
 
-import { grpahCMSImageLoader } from "../util";
+import { grpahCMSImageLoader } from '../util';
 
-const NewsPostCard = ({ post }) => (
-  <div>
-    {/*
+function NewsPostCard({ post }) {
+  return (
+    <div>
+      {/*
   <div className="" style={{ display: "flex", justifyContent: "center" }}>
        <div
         className="NewsBox1"
@@ -34,21 +36,22 @@ const NewsPostCard = ({ post }) => (
           <Link href={`/post/${post.slug}`}>{post.title}</Link>
         </h1>
       </div> */}
-    <div>
-      <div className="flex my-3 h-20 bg-white" style={{}}>
-        <img
-          src={post.featuredImage.url}
-          alt=""
-          className="h-20 w-20 object-cover  shadow-lg "
-        />
-        <div className=" px-4">
-        <h1 className="text-base  "><Link href={`/newspost/${post.slug}`}>{post.title}</Link>
-        </h1>
-        <h1 className="text-xs bold " >{post.excerpt}</h1>
+      <div>
+        <div className="flex my-3 h-20 bg-white" style={{}}>
+          <img
+            src={post.featuredImage.url}
+            alt=""
+            className="h-20 w-20 object-cover  shadow-lg "
+          />
+          <div className=" px-4">
+            <h1 className="text-base  "><Link href={`/newspost/${post.slug}`}>{post.title}</Link>
+            </h1>
+            <h1 className="text-xs bold ">{post.excerpt}</h1>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+}
 
 export default NewsPostCard;
