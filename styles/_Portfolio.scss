@@ -6,9 +6,7 @@
     object-fit: cover;
     color: transparent;
 }
-.image-container {
-    /* position: relative; */
-}
+
 
 .PFtext-container {
     position: absolute;
@@ -119,7 +117,7 @@
 }
 
 .glow:hover {
-
+    
     &:after {
         left: 140%;
         transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
